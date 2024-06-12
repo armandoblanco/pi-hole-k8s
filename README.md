@@ -43,7 +43,7 @@
 
     https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/use-gitops-with-helm 
 
-    az k8s-configuration create --name deploy-pihole-with-gitops --cluster-name home-pihole --resource-group home --operator-instance-name flux --operator-namespace pihole-ns --operator-params='--git-readonly --git-path=releases' --enable-helm-operator --helm-operator-chart-version='0.2.0' --helm-operator-params='--set helm.versions=v3' --repository-url https://github.com/armandoblanco/pi-hole-k8s.git --scope namespace --cluster-type connectedClusters
+    az k8s-configuration create --name deploy-pihole-with-gitops --cluster-name home-pihole --resource-group home --operator-instance-name flux --operator-namespace pihole-ns --operator-params='--git-readonly --git-path=piholechart' --enable-helm-operator --helm-operator-chart-version='0.2.0' --helm-operator-params='--set helm.versions=v3' --repository-url https://github.com/armandoblanco/pi-hole-k8s.git --scope namespace --cluster-type connectedClusters
 
 
 4. [Configure your router](https://docs.pi-hole.net/routers/asus/) to set Pi-hole as your DNS server.
