@@ -8,7 +8,7 @@ spec:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 1Gi
+      storage: 2Gi
   selector:
     matchLabels:
       directory: etc-pihole
@@ -25,7 +25,7 @@ spec:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 500Mi
+      storage: 1Gi
   selector:
     matchLabels:
       directory: etc-dnsmasq.d

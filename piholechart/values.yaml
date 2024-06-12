@@ -1,5 +1,5 @@
-nodeHostname: raspberrypi4
+nodeHostname: pihole
 replicas: 1
-webPassword: supersecret
-externalIP: 192.168.1.2
+webPassword: prE72p5dRor_stOtl7ly
+externalIP: 192.168.1.186
 webPort: 8000
