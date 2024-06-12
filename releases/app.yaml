@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: deploy-pihole-with-gitops
+  namespace: pihole-ns
+spec:
+  releaseName: pihole
+  chart:
+    git: https://github.com/armandoblanco/pi-hole-k8s
+    ref: master
+    path: charts/piholechart
+  values:
+    serviceName: pihole
